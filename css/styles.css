@@ -286,6 +286,39 @@ p {
   background-color: #188ce8;
 }
 
+.hero .button-svg:hover,
+.hero .button-svg:focus {
+  fill: #2196f3;
+}
+
+.modal-text {
+  margin-top: 40px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  outline: 1px solid tomato;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 12px;
+}
+
+.modal-field {
+  padding-top: 20px;
+}
+
+.modal-checkbox {
+  margin-top: 20px;
+}
+
+.modal-button {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+}
+
 /* Peculiarities section */
 
 .pecul-item {
@@ -697,13 +730,6 @@ p {
   color: #ffffff;
   margin-left: 156px;
 }
-
-.footer-sing {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .footer-newsletter {
   font-family: 'Roboto';
   font-weight: 700;
@@ -713,6 +739,25 @@ p {
   text-transform: uppercase;
   color: #ffffff;
   margin-left: 154px;
+}
+.footer-label {
+  margin-left: 93px;
+  margin-top: 20px;
+}
+
+.footer-sing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-input-email {
+  width: 350px;
+  height: 50px;
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.3);
+  background-color: #2f303a;
+  color: white;
 }
 
 .footer-buttun-sing {
@@ -749,11 +794,6 @@ p {
 .footer-had {
   display: flex;
   align-items: baseline;
-}
-
-.footer-label {
-  margin-left: 93px;
-  margin-top: 20px;
 }
 
 .footer-soucial {

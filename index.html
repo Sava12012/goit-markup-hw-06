@@ -55,9 +55,6 @@
     </div>
   </header>
 
-
-
-
   <!-- Main content -->
   <main>
     <!-- Hero section -->
@@ -65,6 +62,14 @@
       <div class="container">
         <h1 class="hero-h1">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br /> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
         <button class="button" type="button" data-modal-open>Заказать услугу</button>
+
+
+
+
+
+
+
+        <!-- Модалка -->
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="button-close" type="button" data-modal-close>
@@ -72,17 +77,35 @@
                 <use href="./images/image.svg#button_clouse"></use>
               </svg>
             </button>
+            <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
+            <form class="modal-form">
+              <div class="modal-field">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="modal-field">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel" />
+              </div>
+              <div class="modal-field">
+                <label for="mail">Почта</label>
+                <input type="email" name="mail" id="mail" /></label>
+              </div>
+              <div class="modal-field">
+                <label for="comment">Комментарий</label>
+                <textarea name="" id="comment" rows="10" placeholder="Введите текст"></textarea>
+              </div>
+            </form>
+            <div class="modal-checkbox">
+              <input type="checkbox" name="topic" value="polici" id="polici">
+              <label for="polici">Я соглашаюсь с рассылкой и принимаю</label>
+              <a href="">Условия договора</a>
+            </div>
+            <button class="modal-button" type="submit">Отправить</button>
           </div>
-
         </div>
     </section>
     </div>
-
-
-
-
-
-
     <!-- Peculiarities section -->
     <section class="peculiarities">
       <div class="container container-peculiarities-text">
@@ -316,7 +339,6 @@
       </div>
     </section>
   </main>
-
   <!-- Customers -->
   <section class="customers">
     <div class="container">
@@ -367,7 +389,6 @@
       </ul>
     </div>
   </section>
-
   <!-- Footer section -->
   <footer class="footer">
     <div class="container footer-had">
@@ -422,20 +443,16 @@
       <div class="footer-label">
         <form class="footer-sing">
           <label>
-            <input type="email" name="email" placeholder="Email">
+            <input class="footer-input-email" type="email" name="email" placeholder="E-mail">
           </label>
           <button class="footer-buttun-sing" type="submit"><span class="footer-button-subscribe">Подписаться</span>
             <svg class="footer-buttun-sing-svg" width="24" height="24">
               <use href="./images/image.svg#icon-telegram"></use>
             </svg>
-
           </button>
         </form>
       </div>
-
     </div>
-
-
   </footer>
   <script src="./js/modal.js"></script>
 </body>
