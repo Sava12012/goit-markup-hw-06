@@ -290,8 +290,8 @@ p {
 .hero .button-svg:focus,
 .button-close:focus {
   fill: #188ce8;
-  transition: var(--anim-slow);
   border-color: #188ce8;
+  transition: var(--anim-slow);
 }
 
 .modal-form {
