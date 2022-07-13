@@ -325,15 +325,30 @@ p {
   margin-bottom: 4px;
 }
 
-.form-checkbox {
+.form-checkbox-input {
   appearance: none;
-  /* position: absolute; */
+  position: absolute;
+}
+
+.form-checkbox-agreement {
+  margin-left: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.46;
+  letter-spacing: 0.03em;
 }
 
 .modal-polici {
-  display: inline-block;
-  outline: 1px solid tomato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: #757575;
+}
+
+.modal-polici-link {
+  margin-left: 4px;
+  color: #2196f3;
 }
 
 .form-input {
@@ -385,12 +400,13 @@ p {
   border-radius: 4px;
 }
 
-.form-checkbox:checked + .form-icon-checkbox {
+.form-checkbox-input:checked + .form-icon-checkbox {
   border-color: #2196f3;
   background-color: #2196f3;
-  background-image: url(../images/modalka/icon-check-2.svg);
+  background-image: url(../images/modalka/icon-check.svg);
   background-size: contain;
   background-origin: content-box;
+  transition: var(--anim-slow);
 }
 
 .modal-field textarea {
@@ -420,11 +436,6 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-}
-
-.modal-polici-link {
-  margin-left: 4px;
-  color: #2196f3;
 }
 
 .modal-button:hover,
