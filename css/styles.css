@@ -336,6 +336,7 @@ p {
   font-size: 14px;
   line-height: 1.46;
   letter-spacing: 0.03em;
+  user-select: none;
 }
 
 .modal-polici {
@@ -393,17 +394,21 @@ p {
 }
 
 .form-icon-checkbox {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 15px;
   height: 15px;
   border: 2px solid #2a2a2a;
   border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .form-checkbox-input:checked + .form-icon-checkbox {
   border-color: #2196f3;
   background-color: #2196f3;
-  background-image: url(../images/modalka/icon-check.svg);
+  background-image: url(../images/modalka/icon-check-white.svg);
   background-size: contain;
   background-origin: content-box;
   transition: var(--anim-slow);
