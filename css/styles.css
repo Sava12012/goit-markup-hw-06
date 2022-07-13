@@ -286,8 +286,12 @@ p {
 }
 
 .hero .button-svg:hover,
-.hero .button-svg:focus {
-  fill: #2196f3;
+.button-close:hover,
+.hero .button-svg:focus,
+.button-close:focus {
+  fill: #188ce8;
+  transition: var(--anim-slow);
+  border-color: #188ce8;
 }
 
 .modal-form {
@@ -326,8 +330,16 @@ p {
 }
 
 .form-checkbox-input {
-  appearance: none;
   position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .form-checkbox-agreement {
@@ -426,7 +438,7 @@ p {
 .modal-button {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 25px;
   width: 200px;
   height: 50px;
   border-radius: 4px;
