@@ -236,15 +236,12 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 528px;
   height: 581px;
-
   background-color: white;
   border-radius: 5px;
-
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--anim-slow);
+  transition: var(--anim-slow);
 }
 
 .button-close {
@@ -261,6 +258,7 @@ p {
   border-radius: 50%;
   background-color: white;
   cursor: pointer;
+  transition: var(--anim-slow);
 }
 
 .hero .button {
@@ -271,23 +269,22 @@ p {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
+  border: none;
   cursor: pointer;
   margin-top: 30px;
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  border-color: #2196f3;
   transition: var(--anim-slow);
 }
 
 .hero .button:hover,
 .hero .button:focus {
   background-color: #188ce8;
+  transition: var(--anim-slow);
 }
 
-.hero .button-svg:hover,
 .button-close:hover,
-.hero .button-svg:focus,
 .button-close:focus {
   fill: #188ce8;
   border-color: #188ce8;
@@ -310,7 +307,6 @@ p {
 }
 
 .modal-field {
-  position: relative;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -364,7 +360,18 @@ p {
   color: #2196f3;
 }
 
+.modal_icon {
+  position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  top: 27%;
+  transform: translate(60%);
+}
+
 .form-input {
+  width: 448px;
   height: 40px;
   cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -380,11 +387,9 @@ p {
   border-radius: 4px;
 }
 
-.form-icon {
-  position: absolute;
-  top: 52%;
-  left: 12px;
-  display: inline-block;
+.modal_icon:focus-within > .form-icon {
+  fill: #2196f3;
+  transition: var(--anim-slow);
 }
 
 .form-input:focus,
@@ -398,11 +403,6 @@ p {
   padding-left: 36px;
   padding-top: 11px;
   padding-bottom: 11px;
-}
-
-.form-input:focus + .form-icon {
-  fill: #2196f3;
-  transition: var(--anim-slow);
 }
 
 .form-icon-checkbox {
@@ -442,8 +442,8 @@ p {
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  background-color: #188ce8;
-  border-color: #188ce8;
+  background-color: #2196f3;
+  border: none;
   color: white;
   transition: var(--anim-slow);
   cursor: pointer;
@@ -451,13 +451,14 @@ p {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 
 .modal-button:hover,
 .modal-button:focus {
-  background-color: #2196f3;
+  background-color: #188ce8;
   transition: var(--anim-slow);
 }
 
@@ -914,7 +915,7 @@ p {
   justify-content: center;
   margin-left: 12px;
   background-color: #2196f3;
-  border-color: #2196f3;
+  border: none;
   color: white;
   transition: var(--anim-slow);
   cursor: pointer;
