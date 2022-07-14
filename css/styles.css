@@ -261,6 +261,13 @@ p {
   transition: var(--anim-slow);
 }
 
+.button-close:hover,
+.button-close:focus {
+  fill: #188ce8;
+  border-color: #188ce8;
+  transition: var(--anim-slow);
+}
+
 .hero .button {
   font-family: 'roboto', sans-serif;
   font-weight: 700;
@@ -281,13 +288,6 @@ p {
 .hero .button:hover,
 .hero .button:focus {
   background-color: #188ce8;
-  transition: var(--anim-slow);
-}
-
-.button-close:hover,
-.button-close:focus {
-  fill: #188ce8;
-  border-color: #188ce8;
   transition: var(--anim-slow);
 }
 
@@ -376,6 +376,7 @@ p {
   cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: var(--anim-slow);
 }
 
 .form-textarea {
@@ -387,8 +388,9 @@ p {
   border-radius: 4px;
 }
 
-.modal_icon:focus-within > .form-icon {
+.modal_icon:focus-within .form-icon {
   fill: #2196f3;
+  outline: #2196f3;
   transition: var(--anim-slow);
 }
 
